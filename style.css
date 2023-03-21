@@ -1,0 +1,119 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+body {
+    background-color: #fff;
+    font-family: 'Patua One', cursive;
+}
+
+/* ----- HOME -----  */
+
+
+/* ----- HEADER -----  */
+
+.header-home {
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #381613;
+}
+
+.header-img {
+    width: 120px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    margin-right: 80px;
+}
+
+.navbar ul li {
+    padding: 15px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* ----- GALLERY -----  */
+
+.gallery-imgs {
+    display: flex;
+    width: 900px;
+    height: auto;
+    margin: 100px;
+}
+
+.gallery-imgs .img-items {
+    flex-wrap: wrap;
+    width: 260px;
+    height: 260px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a3a3a3;
+}
+
+
+/* ----- ABOUT -----  */
+
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-text {
+    width: 1200px;
+    height: 100px;
+    font-size: 20px;
+}
+
+/* ----- DATE -----  */
+
+
+.date {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 360px;
+}
+
+.date h2 {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.date span {
+    font-size: 18px;
+}
+
+
+/* ----- SOBRE -----  */
+
+.history-sapataria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.history-sapataria .title-sapataria {
+    margin: 20px;
+    font-size: 24px;
+}
+
+.history-sapataria p {
+    width: 1600px;
+    margin: 20px;
+}

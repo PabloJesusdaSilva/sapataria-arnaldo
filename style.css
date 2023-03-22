@@ -56,16 +56,15 @@ body {
 
 .gallery-imgs {
     display: flex;
-    width: 900px;
+    justify-content: center;
     height: auto;
     margin: 100px;
 }
 
-.gallery-imgs .img-items {
-    flex-wrap: wrap;
-    width: 260px;
-    height: 260px;
-    margin: 20px;
+.gallery-imgs .img-items{
+    width: 230px;
+    height: 230px;
+    margin: 15px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #a3a3a3;
@@ -106,19 +105,37 @@ body {
 }
 
 
+
 /* ----- SOBRE -----  */
 
-.history-sapataria {
+
+.history-sapataria, .history-arnaldo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
-.history-sapataria .title-sapataria {
-    margin: 20px;
+.history-sapataria .title-sapataria, .history-arnaldo .title-arnaldo {
+    margin: 15px;
     font-size: 24px;
 }
 
-.history-sapataria p {
+.history-sapataria p, .history-arnaldo p {
     width: 1600px;
     margin: 20px;
+}
+
+.gallery-imgs-about {
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+}
+
+.gallery-imgs-about .img-items-about{
+    width: 260px;
+    height: 260px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #a3a3a3;
 }

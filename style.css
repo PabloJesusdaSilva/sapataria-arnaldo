@@ -15,6 +15,7 @@ body {
 
 .header-img {
     width: 120px;
+    height: auto;
 }
 
 .navbar {
@@ -26,6 +27,7 @@ body {
 
 .navbar ul {
     display: flex;
+    justify-content: center;
     align-items: center;
     margin-right: 80px;
 }
@@ -36,7 +38,11 @@ body {
 }
 
 .navbar ul li a {
+    display: flex;
+    justify-content: center;
     text-decoration: none;
+    padding: 40px;
+    font-size: 18px;
     color: #fff;
 }
 
@@ -52,12 +58,12 @@ body {
     display: flex;
     justify-content: center;
     height: auto;
-    margin: 100px;
+    margin: 80px;
 }
 
 .gallery-imgs .img-items{
-    width: 230px;
-    height: 230px;
+    width: 190px;
+    height: 190px;
     margin: 15px;
     padding: 20px;
     border-radius: 10px;
@@ -75,9 +81,10 @@ body {
 }
 
 .about .about-text {
-    width: 1200px;
+    width: 1260px;
     height: 100px;
     font-size: 20px;
+    line-height: 2rem;
 }
 
 /* ----- DATE -----  */
@@ -85,8 +92,9 @@ body {
 
 .date {
     display: flex;
-    margin-top: 50px;
-    margin-left: 360px;
+    position: relative;
+    top: 135px;
+    left: 330px;
 }
 
 .date h2 {
@@ -95,7 +103,8 @@ body {
 }
 
 .date span {
-    font-size: 18px;
+    margin-top: 2px;
+    color: #747474;
 }
 
 
@@ -108,10 +117,13 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
+    line-height: 2rem;
 }
-.history-sapataria .title-sapataria, .history-arnaldo .title-arnaldo {
+
+.history-sapataria .title-sapataria, .history-arnaldo .title-arnaldo, .title-page {
     margin: 15px;
-    font-size: 24px;
+    font-size: 28px;
+    letter-spacing: 2px;
 }
 
 .history-sapataria p, .history-arnaldo p {
@@ -126,10 +138,57 @@ body {
 }
 
 .gallery-imgs-about .img-items-about{
-    width: 260px;
+    width: 280px;
     height: 260px;
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px #a3a3a3;
+}
+
+
+
+.title-page {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.form-contact {
+    display: flex;
+    justify-content: center;
+}
+
+.form-contact input {
+    height: 30px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.input-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: auto;
+    margin: 20px;
+}
+
+.form-contact input:last-child {
+    height: 150px;
+}
+
+.address-contact {
+    margin: 20px;
+    text-align: center;
+}
+
+.icons-contact {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.icons-contact a i {
+    margin: 20px;
+    font-size: 30px;
+    color: #000
 }

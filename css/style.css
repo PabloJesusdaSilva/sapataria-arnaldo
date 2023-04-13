@@ -13,6 +13,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: auto;
+    border-bottom: 1px solid #603601;
 }
 
 .header-home .header-title {
@@ -185,6 +186,7 @@ body {
     align-items: center;
     width: 50vw;
     height: 100%;
+    margin-top: 30px;
 }
 
 .section-contact .title-contact {

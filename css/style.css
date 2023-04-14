@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
+:root {
+    --color-primary: #562B08;
+    --color-secundary: #1C0A00;
+}
+
 body {
     font-family: 'Josefin Sans', sans-serif;
 }
@@ -13,13 +18,13 @@ body {
     justify-content: space-between;
     width: 100%;
     height: auto;
-    border-bottom: 1px solid #603601;
+    border-bottom: 1px solid var(--color-primary);
 }
 
 .header-home .header-title {
     margin: 40px;
-    font-size: 38px;
-    color: #603601;
+    font-size: 44px;
+    color: var(--color-primary);
     font-weight: bold;
 }
 
@@ -34,8 +39,8 @@ body {
 
 .header-home .navbar ul li a {
     text-decoration: none;
-    font-size: 18px;
-    color: #603601;
+    font-size: 20px;
+    color: var(--color-primary);
     padding: 60px 0 60px 0;
 }
 
@@ -43,16 +48,20 @@ body {
 
 .main-img {
     width: 100%;
-    height: 180px;
+    height: 220px;
     object-fit: cover;
     object-position: 2%;
 }
 
 .products .product-title {
+    width: 7%;
     margin: 120px 0 50px 90px;
+    padding: 0.4em;
+    border-radius: 5px;
+    background-color: var(--color-secundary);
     font-size: 30px;
     font-weight: bold;
-    color: #603601;
+    color: #fff;
 }
 
 .products .product-img {
@@ -71,10 +80,14 @@ body {
 }
 
 .about-title {
+    width: 210px;
     margin: 120px 0 20px 90px;
+    padding: 0.4em;
+    border-radius: 5px;
+    background-color: var(--color-secundary);
     font-size: 30px;
     font-weight: bold;
-    color: #603601;
+    color: #fff;
 }
 
 .about-text {
@@ -84,10 +97,14 @@ body {
 }
 
 .date h1{
+    width: 250px;
     margin: 0 0 20px 90px;
+    padding: 0.4em;
+    border-radius: 5px;
+    background-color: var(--color-secundary);
     font-size: 30px;
     font-weight: bold;
-    color: #603601;
+    color: #fff;
 }
 
 .date span {
@@ -108,7 +125,7 @@ body {
     margin-bottom: 20px;
     font-size: 30px;
     font-weight: bold;
-    color: #603601;
+    color: var(--color-secundary);
 }
 
 .history-shoe p, .history-arnaldo p {
@@ -127,14 +144,29 @@ body {
 }
 
 
-/* ---------- CATALOGO ---------- */
+/* ---------- CATALOG ---------- */
 
+.section-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.title-catalog { 
-    margin: 120px 0 0 90px;
-    font-size: 30px;
+.section-about .title-catalog { 
+    margin-top: 160px;
+    font-size: 44px;
     font-weight: bold;
-    color: #603601;
+    color: var(--color-secundary);
+}
+
+.section-about .description-catalog {
+    margin: 30px 0 50px 0;
+    font-size: 20px;
+}
+
+.section-about .fa-solid {
+    margin-bottom: 136px;
+    font-size: 30px;
 }
 
 .section-shoe .title-shoe, 
@@ -143,7 +175,7 @@ body {
     height: auto;
     margin: 120px 0 0 90px;
     padding: 0.5em;
-    background-color: #603601;
+    background-color: var(--color-secundary);
     border-radius: 5px;
     font-size: 26px;
     font-weight: bold;
@@ -176,8 +208,13 @@ body {
 }
 
 
-/* ---------- CATALOGO ---------- */
+/* ---------- CONTACT ---------- */
 
+.page-contact {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
 
 .section-contact {
     display: flex;
@@ -186,16 +223,16 @@ body {
     align-items: center;
     width: 50vw;
     height: 100%;
-    margin-top: 30px;
+    margin-top: 120px;
 }
 
 .section-contact .title-contact {
-    width: 98px;
+    width: 110px;
     margin-bottom: 30px;
     padding: 0.4em;
     border-radius: 5px;
-    background-color: #603601;
-    font-size: 26px;
+    background-color: var(--color-secundary);
+    font-size: 30px;
     color: #fff;
 }
 
@@ -219,13 +256,49 @@ body {
     margin: 40px 0;
     border: none;
     border-radius: 5px;
-    background-color: #603601;
+    background-color: var(--color-secundary);
     color: #fff;
+    cursor: pointer;
 }
 
-.section-contact .address-contact {
+.section-contact .icons-contact a {
+    margin: 20px;
+    font-size: 26px;
+    color: var(--color-secundary);
+    list-style: none;
+    text-decoration: none;
 }
 
+.section-contact .icons-contact a i {
+    transition: all 500ms;
+}
+
+.section-contact .icons-contact a i:hover {
+    scale: 1.08;
+}
+
+.store-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.store-img img {
+    width: 800px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 0 14px #1C0A00;
+}
+
+.store-img .address-contact {
+    margin-top: 20px;
+}
+
+.store-img .address-contact p {
+    margin: 5px;
+}
 
 @media screen and (max-width: 500px) {
     

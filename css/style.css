@@ -3,6 +3,7 @@
 :root {
     --color-primary: #562B08;
     --color-secundary: #1C0A00;
+    --color-tertiary: #fff;
 }
 
 body {
@@ -61,7 +62,7 @@ body {
     background-color: var(--color-secundary);
     font-size: 30px;
     font-weight: bold;
-    color: #fff;
+    color: var(--color-tertiary);
 }
 
 .products .product-img {
@@ -79,7 +80,7 @@ body {
     scale: 1.03;
 }
 
-.about-title {
+    .about-title {
     width: 210px;
     margin: 120px 0 20px 90px;
     padding: 0.4em;
@@ -87,7 +88,7 @@ body {
     background-color: var(--color-secundary);
     font-size: 30px;
     font-weight: bold;
-    color: #fff;
+    color: var(--color-tertiary);
 }
 
 .about-text {
@@ -104,7 +105,7 @@ body {
     background-color: var(--color-secundary);
     font-size: 30px;
     font-weight: bold;
-    color: #fff;
+    color: var(--color-tertiary);
 }
 
 .date span {
@@ -135,7 +136,7 @@ body {
 .imgs-about .gallery-img-about {
     display: flex;
     justify-content: space-around;
-    margin: 20px 0 20px 0;
+    margin: 40px 0 20px 0;
 }
 
 .imgs-about .gallery-img-about  img {
@@ -179,7 +180,7 @@ body {
     border-radius: 5px;
     font-size: 26px;
     font-weight: bold;
-    color: #fff ;
+    color: var(--color-tertiary) ;
 }
 
 .section-shoe .gallery-shoe, 
@@ -204,7 +205,7 @@ body {
 
 .section-shoe .gallery-shoe .card-shoe span, 
 .section-bag .gallery-bag .card-bag span {
-    color: #b4b2b2;
+    color: var(--color-tertiary);
 }
 
 
@@ -233,7 +234,7 @@ body {
     border-radius: 5px;
     background-color: var(--color-secundary);
     font-size: 30px;
-    color: #fff;
+    color: var(--color-tertiary);
 }
 
 .section-contact .form-contact {
@@ -257,7 +258,7 @@ body {
     border: none;
     border-radius: 5px;
     background-color: var(--color-secundary);
-    color: #fff;
+    color: var(--color-tertiary);
     cursor: pointer;
 }
 
@@ -286,7 +287,7 @@ body {
 }
 
 .store-img img {
-    width: 800px;
+    width: 750px;
     margin-top: 100px;
     border-radius: 10px;
     box-shadow: 0 0 14px #1C0A00;
@@ -298,6 +299,48 @@ body {
 
 .store-img .address-contact p {
     margin: 5px;
+}
+
+/* ---------- FOOTER ---------- */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+    background-color: #361500;
+    color: var(--color-tertiary);
+}
+
+.footer .footer-icons {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.footer .footer-icons a i {
+    padding: 20px;
+    color: var(--color-tertiary);
+}
+
+.footer .footer-icons a i {
+    color: var(--color-tertiary);
+    list-style: none;
+    text-decoration: none;
+}
+
+.footer .copyright-icon {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.footer .telephone {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
 }
 
 @media screen and (max-width: 500px) {

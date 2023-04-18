@@ -39,9 +39,26 @@
             <h1 class="title-contact">Contato</h1>
             
             <form class="form-contact">
-                <input type="text" placeholder="Digite o seu nome">
-                <input type="email" placeholder="Digite o seu email">
-                <input type="text" placeholder="Digite a sua mensagem">
+                <label for="nomecompleto">Nome completo:</label>
+                <input type="text" name="nomecompleto">
+
+                <label for="email">Email:</label>
+                <input type="email" name="email">
+
+                <label for="assunto">Assunto:</label>
+                <select name="assunto" id="assunto">
+                    <option value="prazo de entrega">Prazo de entrega</option>
+                    <option value="orçamento">Orçamento</option>
+                    <option value="pagamento">Pagemento</option>
+                    <option value="outro">Outro</option>
+                </select>
+                
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem"></textarea>
+
+                <label for="numero">Número</label>
+                <input type="number" name="numero">
+
                 <button>Enviar</button>
             </form>
 

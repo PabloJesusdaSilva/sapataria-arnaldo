@@ -65,18 +65,27 @@ body {
     color: var(--color-tertiary);
 }
 
-.products .product-img {
+.products .img-product {
     display: flex;
-    justify-content: space-around;
-    
+    justify-content: space-around;    
 }
 
-.products .product-img img{
+.products .img-product .card-product-img {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 320px;
+    color: #919191;
+}
+
+.products .img-product .card-product-img img{
     width: 300px;
+    height: 300px;
+    margin-bottom: 8px;
     transition: all 500ms;
 }
 
-.products .product-img img:hover {
+.products .img-product img:hover {
     scale: 1.03;
 }
 
@@ -123,10 +132,14 @@ body {
 }
 
 .history-shoe .title-shoe, .history-arnaldo .title-arnaldo {
-    margin-bottom: 20px;
+    width: 327px;
+    margin: 120px 0 20px 0;
+    padding: 0.4em;
+    border-radius: 5px;
+    background-color: var(--color-secundary);
     font-size: 30px;
     font-weight: bold;
-    color: var(--color-secundary);
+    color: var(--color-tertiary);
 }
 
 .history-shoe p, .history-arnaldo p {
@@ -139,7 +152,7 @@ body {
     margin: 40px 0 20px 0;
 }
 
-.imgs-about .gallery-img-about  img {
+.imgs-about .gallery-img-about img {
     width: 340px;
     border-radius: 5px;
 }
@@ -236,21 +249,44 @@ body {
     color: var(--color-tertiary);
 }
 
-.section-contact .form-contact {
+.section-contact .contact-form {
     display: flex;
     flex-direction: column;
 }
 
-.section-contact .form-contact input {
+.section-contact .contact-form {
+    font-size: 22px
+}
+
+.section-contact .contact-form input {
     width: 400px;
     height: 25px;
-    margin: 20px 0 20px 0;
+    margin: 10px 0 20px 0;
     padding: 8px;
     border-radius: 5px;
     border: 1px solid #b4b2b2;
 }
 
-.section-contact .form-contact button {
+.section-contact .contact-form select {
+    width: 418px;
+    height: 45px;
+    margin: 10px 0 20px 0;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #b4b2b2;
+}
+
+.section-contact .contact-form textarea {
+    width: 400px;
+    height: 50px;
+    margin: 10px 0 20px 0;
+    padding: 8px;
+    resize: none;
+    border-radius: 5px;
+    border: 1px solid #b4b2b2;
+}
+
+.section-contact .contact-form button {
     width: 420px;
     height: 40px;
     margin: 40px 0;
@@ -342,9 +378,11 @@ body {
     margin-right: 50px;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 414px) {
 
+    
     /* ---------- HEADER ---------- */
+
 
     .header-home {
         display: flex;
@@ -366,6 +404,7 @@ body {
         justify-content: center;
     }
 
+
     /* ---------- HOME ---------- */
 
 
@@ -375,15 +414,15 @@ body {
         margin: 60px 0 10px 40px;
     }
     
-    .products .product-img {
+    .products .img-product {
         display: flex;
         flex-direction: column;
-        margin: 20px 0 20px 40px;
+        margin: 20px 0 40px 40px;
     }
 
-    .products .product-img img {
+    .products .img-product .card-product-img img {
         width: 250px;
-        margin-bottom: 24px;
+        margin: 20px 0 24px 0;
     }
     
     .about-title {
@@ -407,7 +446,92 @@ body {
         margin: 60px 0 20px 40px;
     }
 
+
+    /* ---------- ABOUT ---------- */
+
+
+    .history-shoe, .history-arnaldo {
+        width: 340px;
+        margin: 20px 0 20px 40px;
+    }
+
+    .imgs-about {
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgs-about .gallery-img-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    } 
+
+    .imgs-about .gallery-img-about img {
+        margin-bottom: 28px;
+    }
+
+
+    /* ---------- CATALOG ---------- */
+
+
+    .section-shoe .title-shoe, 
+    .section-bag .title-bag {
+        margin: 20px 0 20px 40px;
+    }
+
+    .section-shoe .gallery-shoe, 
+    .section-bag .gallery-bag {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 0px 40px;
+    }
+    
+    
+    /* ---------- CONTACT ---------- */
+
+
+    .page-contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section-contact {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-contact .contact-form {
+        margin-left: 190px;
+    }
+
+    .section-contact .contact-form input,
+    .section-contact .contact-form textarea,
+    .section-contact .contact-form button  {
+        width: 300px;
+    }
+
+    .section-contact .contact-form select {
+        width: 318px;
+    }
+
+    .section-contact .icons-contact a i {
+        text-align: center;
+    }
+
+    .store-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .store-img img {
+        width: 340px;
+    }
+
+
     /* ---------- FOOTER ---------- */
+
 
     .footer {
         display: flex;

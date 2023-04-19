@@ -520,10 +520,13 @@ body {
 
     .section-contact .contact-form button {
         width: 324px;
+        font-size: 19px;
+        font-weight: bold;
     }
-
+    
     .section-contact .contact-form select {
         width: 324px;
+        font-size: 18px;
     }
 
     .section-contact .icons-contact {
@@ -565,6 +568,7 @@ body {
         display: flex;
         justify-content: center;
         margin: 0;
+        font-size: 22px;
     }
 
     .footer .copyright-icon {

@@ -474,6 +474,10 @@ body {
     /* ---------- CATALOG ---------- */
 
 
+    .section-about .title-catalog {
+        margin-top: 100px;
+    }
+
     .section-shoe .title-shoe, 
     .section-bag .title-bag {
         margin: 20px 0 20px 40px;

@@ -495,37 +495,48 @@ body {
         flex-direction: column;
         justify-content: center;
         width: 100%;
-    }
-
-    .section-contact {
-        display: flex;
-        justify-content: center;
+        height: auto;
     }
 
     .section-contact .contact-form {
-        margin-left: 190px;
+        margin-left: 100%;
     }
 
+
     .section-contact .contact-form input,
-    .section-contact .contact-form textarea,
-    .section-contact .contact-form button  {
-        width: 300px;
+    .section-contact .contact-form textarea {
+        width: 310px;
+    }
+
+    .section-contact .contact-form button {
+        width: 324px;
     }
 
     .section-contact .contact-form select {
-        width: 318px;
+        width: 324px;
     }
 
-    .section-contact .icons-contact a i {
-        text-align: center;
+    .section-contact .icons-contact {
+        display: flex;
+        width: 100%;
+        height: 50px;
+        margin-left: 100%;
     }
-
-    .store-img {
+    
+    .section-contact .icons-contact a i .fa {
         display: flex;
         justify-content: center;
     }
+    
 
+    .store-img {
+        width: 100%;
+        height: auto;
+    }
+    
     .store-img img {
+        display: flex;
+        justify-content: center;
         width: 340px;
     }
 

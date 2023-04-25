@@ -56,6 +56,23 @@ body {
     object-position: 2%;
 }
 
+.about-title {
+    width: 220px;
+    margin: 120px 0 20px 90px;
+    padding: 0.4em;
+    border-radius: 5px;
+    background-color: var(--color-secundary);
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--color-tertiary);
+}
+
+.about-text {
+    width: 1600px;
+    font-size: 18px;
+    margin: 0 0 50px 90px;
+}
+
 .products .product-title {
     width: 7%;
     margin: 120px 0 50px 90px;
@@ -91,21 +108,8 @@ body {
     scale: 1.03;
 }
 
-.about-title {
-    width: 210px;
-    margin: 120px 0 20px 90px;
-    padding: 0.4em;
-    border-radius: 5px;
-    background-color: var(--color-secundary);
-    font-size: 30px;
-    font-weight: bold;
-    color: var(--color-tertiary);
-}
-
-.about-text {
-    width: 1600px;
-    font-size: 18px;
-    margin: 0 0 50px 90px;
+.date {
+    margin-top: 80px;
 }
 
 .date h1{

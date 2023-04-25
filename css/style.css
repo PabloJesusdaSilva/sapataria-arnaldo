@@ -71,6 +71,7 @@ body {
     width: 1600px;
     font-size: 18px;
     margin: 0 0 50px 90px;
+    line-height: 22px;
 }
 
 .products .product-title {
@@ -150,12 +151,13 @@ body {
 
 .history-shoe p, .history-arnaldo p {
     padding: 20px 0 20px 0;
+    line-height: 22px;
 }
 
 .imgs-about .gallery-img-about {
     display: flex;
     justify-content: space-around;
-    margin: 40px 0 20px 0;
+    margin: 40px 0 20px 0;  
 }
 
 .imgs-about .gallery-img-about img {
@@ -313,7 +315,7 @@ body {
 .section-contact .icons-contact a {
     margin: 20px;
     font-size: 26px;
-    color: var(--color-secundary);
+    color: #128c7e;
     list-style: none;
     text-decoration: none;
 }
@@ -350,7 +352,9 @@ body {
 }
 
 .store-img .address-contact {
-    margin-top: 20px;
+    margin-top: 70px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .store-img .address-contact p {
